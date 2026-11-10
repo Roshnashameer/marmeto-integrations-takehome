@@ -1,0 +1,30 @@
+{
+  "name": "marmeto-integrations-takehome",
+  "version": "1.0.0",
+  "description": "Idempotent orders/create webhook handler with courier dispatch and reconciliation",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "courier": "node mock-courier.js",
+    "start": "ts-node src/index.ts",
+    "reconcile": "ts-node src/reconcile.ts",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.17.10",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
